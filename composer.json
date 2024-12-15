@@ -1,0 +1,17 @@
+{
+    "name": "moises/climate-api",
+    "description": "A simple climate API written in PHP following some vague interpretation of Clean Architecture. This API is designed to log data received from a NodeMCU with a DHT11.",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Moises\\ClimateApi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Moisés Menezes Mele",
+            "email": "moisesmmele@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
