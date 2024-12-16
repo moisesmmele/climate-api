@@ -4,11 +4,12 @@ namespace Moises\ClimateApi\Core\Domain;
 
 interface ClimateDataRepository
 {
-    public function getAllData(): array;
-    public function getDataByDate($date): ?ClimateData;
-    public function getDataByPeriod($period): array;
-    public function getDataByTemperatureRange($startDate, $endDate): array;
-    public function getDataByHumidityRange($startDate, $endDate): array;
-    public function save(ClimateData $data): bool;
+    public function getAllClimateData(): array;
+    public function findClimateDataById(int $id): ClimateData;
+    public function findClimateDataByDate(string $date): array;
+    public function getClimateDataByDateRange(string $startDate, string $endDate): array;
+    public function getClimateDataByHumidityRange(float $startHumidity, float $endHumidity): array;
+    public function getClimateDataByTemperatureRange(float $startTemperature, float $endTemperature): array;
+    public function saveClimateData(ClimateData $data): bool;
 
 }
