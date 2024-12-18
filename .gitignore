@@ -1,3 +1,4 @@
 .idea/
 vendor/
 package.xml
+composer.lock
