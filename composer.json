@@ -13,5 +13,9 @@
             "email": "moisesmmele@gmail.com"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "require": {
+        "slim/slim": "4.*",
+        "slim/psr7": "dev-master"
+    }
 }
